@@ -1,0 +1,87 @@
+@deepBlue: #262665;
+
+.less-border-radius(@radius: 10px) {
+  border-radius: @radius @radius @radius @radius;
+}
+.less-box-shadow(@radius: 10px, @blur: 20px, @color: #999) {
+  box-shadow: @radius @radius @blur @color;
+}
+.less-border(@color: #999, @size: 1px, @style: solid) {
+  border: @size @style @color;
+}
+body {
+  font-family: sans-serif;
+  color: #333;
+  background-color: #cccccc;
+  background-image: url('https://i.imgur.com/gj2mEJA.png');
+}
+#container {
+  max-width: 700px;
+  margin: auto;
+  background:azure;
+  padding: 25px;
+  .less-border(#ccc);
+  .less-border-radius(10px);
+  .less-box-shadow(10px, 20px, #20242c);
+  border: 3px solid @deepBlue;
+}
+#diagram {
+  background: white;
+  width: 600px;
+  margin: auto;
+  display: none;
+  .less-border(#999);
+
+  div {
+    float: left;
+  }
+}
+#gcf, #calculation {
+  display:none;
+}
+#infobutton {
+  margin-top:16px;
+}
+#whatis {
+  margin-top:16px;
+}
+
+h1 {
+  color: @deepBlue;
+}
+h2 {
+  font-size: 1.5em; 
+  color: @deepBlue;
+}
+h3 {
+  font-weight: : bold;
+}
+input {
+  .less-border-radius(5px);
+}
+footer {
+  text-align: center;
+  font-size: .8em;
+  padding-top: 25px;
+  color: #bbb;
+
+  #navlinks {
+    padding: 0;
+  }
+
+  a {
+    color: rgb(155, 155, 204);
+  }
+
+  li {
+    list-style-type:none;
+    display:inline;
+    padding: 0 20px;
+  }
+}
+@media screen and (max-width:420px) {
+  footer li {
+    display:block;
+    text-align:left;
+  }
+}

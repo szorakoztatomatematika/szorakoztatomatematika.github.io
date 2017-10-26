@@ -1,0 +1,52 @@
+<!doctype html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link href="styles.css" rel="stylesheet" type="text/css">
+  <title>Euklideszi algoritmus</title>
+</head>
+<body>
+  <div id="container">
+    <h1>Euklideszi algoritmus</h1>
+      <div id="inputArea">
+        <h2>Add meg azt a két számot aminek tudni akarod a legnagyobb közös osztóját:</h2>
+        <p>
+          <input id="firstNum" type="text">&nbsp;
+          <input id="secondNum" type="text">
+        </p>
+        <p><input id="submit" type="button" value="Legnagyobb közös osztó kiszámítása"></p>
+        <input id="showMe" type="checkbox"> Eredmény megjelenítése vizuálisan
+      </div>
+      
+      <h2 id="gcf"></h2>
+      <p id="calculation"></p>
+      <div id="diagram"></div>
+
+      <button type="button" id="infobutton" class="btn btn-default" data-toggle="modal" data-target="#infomodal">
+       Mi az az Eukledeszi algoritmus?
+      </button>
+
+      <div class="modal fade" id="infomodal" tabindex="-1" role="dialog" aria-labelledby="whatis">
+        <div class="modal-dialog modal-lg" role="document">
+          <div class="modal-content">
+
+            <div class="modal-header">
+              <h4 class="modal-title" id="whatis">Mi az az Eukledeszi algoritmus?</h4>
+            </div>
+
+           
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+
+          </div><!--modal-content-->
+        </div><!--modal-dialog-->
+      </div><!--modal-->
+
+  </div> 
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
